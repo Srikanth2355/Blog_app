@@ -14,9 +14,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("/assets/banner.jpeg");
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+.home_page header {
+    background-image: url("/assets/banner.jpeg");
+
 }
 
 header > * {
@@ -25,7 +30,7 @@ header > * {
 
 header::after {
     content: "";
-    position:relative;
+    position:absolute;
     left: 0;
     right: 0;
     top: 0;
