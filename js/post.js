@@ -1,7 +1,7 @@
 
 
-const API_URL = "http://localhost:3000/api/posts/";
-const API_BASE_URL = "http://localhost:3000/";
+const API_URL = "https://murmuring-headland-84138.herokuapp.com/api/posts/";
+const API_BASE_URL = "https://murmuring-headland-84138.herokuapp.com/";
 
 window.onload = () => {
     getPost();

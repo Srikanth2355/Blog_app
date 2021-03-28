@@ -1,6 +1,6 @@
 
 
-const API_URL = "http://localhost:3000/api/posts";
+const API_URL = "https://murmuring-headland-84138.herokuapp.com/api/posts";
 
 const submitNewPost = () => {
     
