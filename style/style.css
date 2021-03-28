@@ -1,7 +1,6 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    min-width: 100vw;
 }
 
 .post-link {
@@ -54,8 +53,6 @@ header::after {
 }
 
 .main {
-    background-color: yellow;
-    height: 100px;
     margin-top: 32px;
     display: flex;
     justify-content: center;
@@ -67,9 +64,81 @@ header::after {
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
-
 }
 
+.post {
+    border: 1px solid #eaecee;
+    border-radius: 8px;
+    margin-top: 24px;
+    display: flex;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.post:hover {
+    transform: translate3d(0px,-10px,0px);
+    box-shadow: 0 2rem 5rem 0 rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+}
+
+.post-image {
+    background-image: url("https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxNnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60");
+    flex-basis: 40%;
+    background-size: cover;
+    background-position: center;
+}
+
+.post-content {
+    flex-basis: 60%;
+    padding: 24px;
+}
+
+.post-date {
+    font-size: 12px;
+    color: #adb5bd;
+    font-weight:600;
+}
+
+.post-title {
+    margin-top: 16px;
+    font-size:1.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.post-title h4 {
+    margin: 0px;
+}
+
+.post-text {
+    margin-top:4px;
+    color: #495057;
+    font-weight: 400;
+    line-height: 1.4;
+    max-height: 65px;
+    overflow: hidden;
+}
+
+.nav-button.new-post-button {
+    position: fixed;
+    bottom:30px;
+    right: 20px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: #004186;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+    transition: all 0.25s ease;
+}
+
+.nav-button.new-post-button:hover {
+    background-color: #002349;
+}
 
 
 footer {
